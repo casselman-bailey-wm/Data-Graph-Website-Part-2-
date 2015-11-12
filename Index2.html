@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="index.html" type="text/html" rel="index">
+</head>
+<body>
+
+<table border="1px">
+    <tr>
+        <td> <img onclick="change('Ali', 'http://www.erictrules.com/blog/wp-content/uploads/2014/08/fist.jpg','https:/' +
+         '/studiolicensinginc.files.wordpress.com/2012/08/muhammad_aug2012.png')" id="Ali" src="http://www.erictrules.
+         com/blog/wp-content/uploads/2014/08/fist.jpg" width="300" height="300"/>
+            <p>Ali</p>
+            </td>
+        <td> <img onclick="change('Tyson', 'http://75a9.http.cdn.softlayer.net/0075A9/thesweetscience/images/Mike%20T' +
+         'yson-115.jpg','http://www.flickeringmyth.com/wp-content/uploads/2015/03/miketyson.jpeg')"
+                  id="Tyson" src="http://75a9.http.cdn.softlayer.net/0075A9/thesweetscience/images/Mike%20Tyson-115.
+                  jpg" width="300px"height="300px">
+                <p>Tyson</p>
+        </td>
+        <td> <img onclick="change('Foreman','http://www.georgeforeman.com/template/images/bio_champ1.png','http://asset' +
+         's.nydailynews.com/polopoly_fs/1.72723.1396460602!/img/httpImage/image.jpg_gen/derivatives/gallery_1200/george' +
+          '-foreman-photocall.jpg')" id="Foreman"
+                  src="http://www.georgeforeman.com/template/images/bio_champ1.png" width="300px"height="300px">
+            <p>Foreman</p>
+        </td>
+    </tr>
+    <tr>
+        <td> <img onclick="change('Holmes', 'http://cdn.sportsmemorabilia.com/sports-product-image/28-t1132875-500.jpg',
+        'http://a4.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE4MDAzNDEwNTU4MzU0' +
+         'OTU4.jpg')" id="Holmes" src="28-t1132875-500.jpg"width="300px"height="300px">
+            <p>Holmes</p>
+        </td>
+        <td> <img onclick="change('Ali-Fraizer', 'http://usercontent2.hubimg.com/8066155.jpg', 'http://imgick.oregonliv' +
+         'e.com/home/olive-media/width960/img/oregonian/photo/2015/01/19/-1c738c67d722ab99.JPG')"
+                  id="Ali-Fraizer" src="http://usercontent2.hubimg.com/8066155.jpg"width="300px"height="300px">
+            <p>Ali-Faizer</p>
+        </td>
+        <td> <img onclick="change('Fraizer', 'http://static.boxrec.com/thumb/7/70/Frazier.jpg/300px-Frazier.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/b/bc/Joe_Frazier_2010.jpg')"
+                  id="Fraizer" src="http://static.boxrec.com/thumb/7/70/Frazier.jpg/300px-Frazier.jpg"
+                  width="300px"height="300px">
+            <p>Fraizer</p>
+        </td>
+    </tr>
+    <tr>
+        <td> <img onclick="change('Ali-Foreman', 'http://www.favething.com/uploads/images/main-fave-images/i_ve_seen_g' +
+         'eorge_foreman_shadow_boxing_and_the_shadow_won_muhammad_ali-1.jpg','http://i.dailymail.co.uk/i/pix/2014/10/13/141' +
+          '3207570311_wps_6_Challenger_Muhammad_Ali_i.jpg')" id="Ali-Foreman" src="http://www.favethi
+         ng.com/uploads/images/main-fave-images/i_ve_seen_george_foreman_shadow_boxing_and_the_shadow_won_muhammad_ali-1.jpg"
+                  width="300px"
+                  height="300px">
+            <p>Ali-Foreman</p>
+        </td>
+        <td> <img onclick="change('Tyson-Holmes','http://static.boxrec.com/thumb/7/74/Holmes-Tyson.jpg/310px-Holmes-Tyso' +
+         'n.jpg','http://www.sportsblink.com/product_images/larry-holmes-tyson-autographed-photograph-3358709.jpg')"
+                  id="Tyson-Holmes" src="http://static.boxrec.com/thumb/7/74/Holmes-Tyson.jpg/310px-
+        Holmes-Tyson.jpg"width="300px"height="300px">
+            <p>Tyson-Holmes</p>
+        </td>
+        <td> <img onclick="change('Foreman-Fraizer','http://latimesblogs.latimes.com/.a/6a00d8341c630a53ef0162fc3b9fc9970' +
+         'd-800wi','https://s-media-cache-ak0.pinimg.com/736x/50/11/e4/5011e44508ed0ee326cda0b5690bab' +
+          'a1.jpg')" id="Foreman-Fraizer" src="http://latimesblogs.latimes.com/.a/6a00d8341c630a53ef0162
+        fc3b9fc9970d-800wi"width="300px"height="300px">
+            <p>Foreman-Fraizer</p>
+        </td>
+    </tr>
+
+</table>
+
+<script>
+    function change(id, src1, src2){
+        var img = document.getElementById(id);
+        console.log(img.src + " " + src1 + " " + src2);
+        if(img.src == src1) img.src = src2;
+        else img.src = src1;
+    }
+</script>
+
+</body>
+</html>
